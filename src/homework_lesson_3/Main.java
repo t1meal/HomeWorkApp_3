@@ -3,14 +3,8 @@ package homework_lesson_3;
 public class Main {
 
     public static void main(String[] args) {
-        int len = 10;
-        int initialValue = 6;
-        int [] returnMassive = Massive(len , initialValue);
-        for (int n = 0; n <returnMassive.length; n++){
-            System.out.print(returnMassive[n] + " ");
-        }
-        System.out.println("\n");
 
+// Задание 1.
         int [] a = new int[10];
         a[0] = 1;
         a[1] = 1;
@@ -31,14 +25,14 @@ public class Main {
             System.out.print(a[a1] + " ");
         }
         System.out.println("\n");
-
+// Задание 2.
         int [] b = new int [100];
         for (int b1 =0; b1 < b.length; b1++){
             b[b1] = b1;
             System.out.print(b[b1] + " " );
         }
         System.out.println("\n");
-
+// Задание 3.
         int [] c = { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1  };
         for (int ci = 0; ci < c.length; ci++){
             if(c[ci] < 6){
@@ -47,7 +41,7 @@ public class Main {
             System.out.print(c[ci] + " ");
         }
         System.out.println("\n");
-
+// Задание 4.
         int [][] d = new int[3][3];
         for (int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++){
@@ -58,11 +52,18 @@ public class Main {
                 }
                 System.out.print(d[i][j] + " ");
             }
-            System.out.println();
+            System.out.println("\n");
         }
+// Задание 5.
+        int len = 10;
+        int initialValue = 6;
+        int [] returnMassive = Massive(len , initialValue);
+        for (int n = 0; n <returnMassive.length; n++){
+            System.out.print(returnMassive[n] + " ");
+        }
+        System.out.println("\n");
+// Задание 6.
         maxMin();
-        int [] bal = { 2, 3, 2, 4, 2, 3, 2, 4};
-        checkBallance(bal);
     }
     public static int [] Massive (int w, int q){
         int [] privateMassive = new int[w];
@@ -79,7 +80,6 @@ public class Main {
         }
         System.out.println("Max value = " + first);
     }
-    public static boolean checkBallance (int[] bal){
 
     }
-}
+
